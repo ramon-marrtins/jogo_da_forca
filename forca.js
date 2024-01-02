@@ -177,16 +177,3 @@ window.addEventListener('keydown', (e) => {
         VerificarLetraEscolhida(e.key.toUpperCase());
     }
 })
-
-function darkMode() {
-    var element = document.body;
-    var content = document.getElementById("DarkModetext");
-    element.className = "dark-mode";
-    content.innerText = "Defina a cor da sua página";
-  }
-  function lightMode() {
-    var element = document.body;
-    var content = document.getElementById("DarkModetext");
-    element.className = "light-mode";
-    content.innerText = "Defina a cor da sua página";
-  }
