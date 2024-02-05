@@ -3,41 +3,45 @@ let listaDinamica = [];
 let palavraSecretaCategoria;
 let palavraSecretaSorteada;
 const palavras = [
-    palavra001 = {
+    {
         nome: "ARARIPE",
         categoria: "CIDADE"
     },
-    palavra002 = {
+    {
         nome: "BREJINHO",
         categoria: "DISTRITO"
     },
-    palavra003 = {
+    {
         nome: "RIACHOGRANDE",
         categoria: "DISTRITO"
     },
-    palavra004 = {
+    {
         nome: "ALAGOINHA",
         categoria: "DISTRITO"
     },
-    palavra005 = {
+    {
         nome: "PAJEU",
         categoria: "DISTRITO"
     },
-    palavra011 = {
+    {
         nome: "SANTOANTONIO",
         categoria: "PADROEIRO"
     },
-    palavra012 = {
+    {
         nome: "CASADEPITIA",
         categoria: "PATRIMONIO"
     },
-    palavra013 = {
+    {
         nome: "PREFEITURA",
         categoria: "PATRIMONIO"
     },
-    palavra014 = {
+    {
         nome: "CICEROFERREIRA",
         categoria: "PREFEITO"
+    },
+    {
+        nome: "SAOFRANCISCO",
+        categoria: "PADROEIRO"
     },
 ]
 
@@ -47,8 +51,8 @@ criarPalavraSecreta()
 
 function criarPalavraSecreta() {
     const indexPalavra = parseInt(Math.random() * palavras.length)
-    palavraSecretaSorteada = palavras [indexPalavra].nome;
-    palavraSecretaCategoria = palavras [indexPalavra].categoria;
+    palavraSecretaSorteada = palavras[indexPalavra].nome;
+    palavraSecretaCategoria = palavras[indexPalavra].categoria;
 }
 
 palavraTela();
@@ -87,7 +91,9 @@ function mudarStyleLetra(tecla) {
     document.getElementById(tecla).style.color = '#6a6969';
 }
 
+
 function comparaListas(letra) {
+
     const posicao = palavraSecretaSorteada.indexOf(letra)
     if (posicao < 0) {
         tentativas--
@@ -116,31 +122,7 @@ function comparaListas(letra) {
     }
 
     function imagemForca() {
-        switch (tentativas) {
-            case 6:
-                break;
-            case 5:
-                document.getElementById('img').style.background = "url('imagem/forca01.png')";
-                break;
-            case 4:
-                document.getElementById('img').style.background = "url('imagem/forca02.png')";
-                break;
-            case 3:
-                document.getElementById('img').style.background = "url('imagem/forca03.png')";
-                break;
-            case 2:
-                document.getElementById('img').style.background = "url('imagem/forca04.png')";
-                break;
-            case 1:
-                document.getElementById('img').style.background = "url('imagem/forca05.png')";
-                break;
-            case 0:
-                document.getElementById('img').style.background = "url('imagem/forca06.png')";
-                break;
-            default:
-                document.getElementById('img').style.background = "url('imagem/forca.png')";
-                break;
-        }
+        document.getElementById('img').src = `./imagem/forca${6 - tentativas}.png`
     }
 
     function abreModal(titulo, mensagem) {
