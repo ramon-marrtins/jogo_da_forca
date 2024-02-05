@@ -29,10 +29,13 @@ body {
     background-repeat: no-repeat;
 }
 
+<<<<<<< HEAD
 #lpg{
     width: 100%;
 }
 
+=======
+>>>>>>> fe6974d7207527e447c8b384423f0544c0761a42
 #palavraSecreta {
     display: flex;
     flex-direction: row;
