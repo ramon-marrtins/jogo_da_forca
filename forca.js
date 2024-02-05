@@ -40,9 +40,22 @@ const palavras = [
         categoria: "PREFEITO"
     },
     {
-        nome: "SAOFRANCISCO",
-        categoria: "PADROEIRO"
+        nome: "RAIMUNDOELESBAO",
+        categoria: "AUTOR DO HINO"
     },
+    {
+        nome: "BREJOSECO",
+        categoria: "PRIMEIRO NOME"
+    },
+    {
+        nome: "FEQUARIPE",
+        categoria: "FESTIVAL DE QUADRILHA"
+    },
+    {
+        nome: "SOLDADINHODOARARIPE",
+        categoria: "AVE EM INSTINÇÃO"
+    },
+
 ]
 
 
