@@ -40,7 +40,6 @@ const palavras = [
         categoria: "PREFEITO"
     },
     {
-<<<<<<< HEAD
         nome: "RAIMUNDOELESBAO",
         categoria: "AUTOR DO HINO"
     },
@@ -57,11 +56,6 @@ const palavras = [
         categoria: "AVE EM INSTINÇÃO"
     },
 
-=======
-        nome: "SAOFRANCISCO",
-        categoria: "PADROEIRO"
-    },
->>>>>>> fe6974d7207527e447c8b384423f0544c0761a42
 ]
 
 
